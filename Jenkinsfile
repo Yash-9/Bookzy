@@ -1,28 +1,29 @@
 pipeline{
-    agent{
-        label 'main'
-    }
+    agent any
     tools{
         maven 'maven'
-        jdk 'jdk_11'
     }
     stages{
-        stage(Check out the Code){
-          step{
+        stage("Checkout the Code"){
+          steps{
               git url : 'git@github.com:Yash-9/Bookzy.git' 
           }
         }
-        stage(Compile Code){
-            step{
+        stage("Compile Code"){
+            steps{
                sh "mvn compile"
             }
         }
-        stage(Junit test){
-            step{
+        stage("Junit test"){
+            steps{
                 sh "mvn test"
             }
         }
-        
+        stage("Packaging"){
+            steps{
+                sh "mvn package"
+            }
+        }
     }
 
 
