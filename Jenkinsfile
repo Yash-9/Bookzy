@@ -19,7 +19,11 @@ pipeline{
                 sh "mvn test"
             }
         }
-        
+        stage("Packaging"){
+            steps{
+                sh "mvn package"
+            }
+        }
     }
 
 
