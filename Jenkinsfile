@@ -9,17 +9,17 @@ pipeline{
               git url : 'git@github.com:Yash-9/Bookzy.git' 
           }
         }
-        stage("Compile Code"){
+        stage("Compile Code "){
             steps{
                sh "mvn compile"
             }
         }
-        stage("Junit test"){
+        stage("Junit test "){
             steps{
                 sh "mvn test"
             }
         }
-        stage("Packaging"){
+        stage("Packaging "){
             steps{
                 sh "mvn package"
             }
