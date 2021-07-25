@@ -12,7 +12,15 @@
 <body>
  <h1 align="center">Welcome to Bookzy </h1>
 <h1 align="center">Which type of book you want??</h1>
-<h2 align="center">This is cool huh?!</h2>
+<h2 align="center">
+ Action and Adventure.
+Classics.
+Comic Book or Graphic Novel.
+Detective and Mystery.
+Fantasy.
+Historical Fiction.
+Horror.
+Literary Fiction.</h2>
 <h2 align="center">Project Done!</h2>
 </body>
 </html>
